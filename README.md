@@ -1,2 +1,2 @@
 # ta-engenharia-software
-Projeto de tópicos avançados em engenharia de software UniFTC 2022.1
+API do Projeto de tópicos avançados em engenharia de software UniFTC 2022.1
