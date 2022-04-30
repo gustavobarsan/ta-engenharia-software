@@ -1,6 +1,5 @@
 FROM python:3.10.4-slim
 
-
 COPY ./src /app/src
 
 COPY requirements.txt /app
