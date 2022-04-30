@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from db import get_database
+from config.db import get_database
 
 app = FastAPI()
 
