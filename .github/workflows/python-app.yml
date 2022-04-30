@@ -46,4 +46,5 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "taes-project-uniftc"
           heroku_email: "gustavobarsan@gmail.com"
-          docker_compose_file: "./docker-compose.yml"
+          dockerfile_directory: ./
+          dockerfile_name: Dockerfile
