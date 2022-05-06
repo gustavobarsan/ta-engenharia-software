@@ -8,4 +8,4 @@ async def root():
     # dbconn = get_database()
     # response = [msg['message'] for msg in dbconn['test'].find({})]
     # return response[0]
-    return "Hello World"
+    return "PROJETO TAES 2022 - UNIFTC"
