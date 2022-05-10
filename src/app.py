@@ -5,9 +5,9 @@ app = FastAPI()
 
 app.include_router(professor)
 
-# @app.get("/")
-# async def root():
+@app.get("/")
+async def root():
     # dbconn = get_database()
     # response = [msg['message'] for msg in dbconn['test'].find({})]
     # return response[0]
-    # return "PROJETO TAES 2022 - UNIFTC"
+    return "PROJETO TAES 2022 - UNIFTC"
