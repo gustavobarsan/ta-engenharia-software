@@ -3,7 +3,7 @@ from pydantic import BaseModel
 
 class Professor(BaseModel):
     nome: str
-    email: str
+    email: str 
     senha: str  
     disciplina: List[str]
     adm: bool
