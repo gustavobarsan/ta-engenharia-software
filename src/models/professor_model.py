@@ -7,3 +7,8 @@ class Professor(BaseModel):
     senha: str  
     disciplina: List[str]
     adm: bool = True
+
+class ProfessorEditar(BaseModel):
+    nome: Optional[str]
+    email: Optional[str] 
+    senha: Optional[str]  
