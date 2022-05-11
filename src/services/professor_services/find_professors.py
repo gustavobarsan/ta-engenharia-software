@@ -7,9 +7,9 @@ def professor_parse(entity_professor) -> dict:
         "id": str(entity_professor['_id']),
         "nome": entity_professor['nome'],
         "email": entity_professor['email'],
-        "senha": entity_professor['password']
+        "disciplina:": entity_professor['disciplina:'],
     } 
 
 def get_all_professors() -> list:
-    professor_list = conn_db['usuario'].find({"adm":True})
+    professor_list = conn_db['usuarios'].find({"adm":True})
     return [professor_parse(professor) for professor in professor_list] 
