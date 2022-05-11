@@ -11,5 +11,5 @@ def professor_parse(entity_professor) -> dict:
     } 
 
 def get_all_professors() -> list:
-    professor_list = conn_db['professor'].find()
+    professor_list = conn_db['usuario'].find({"adm":True})
     return [professor_parse(professor) for professor in professor_list] 
