@@ -6,4 +6,4 @@ class Professor(BaseModel):
     email: str 
     senha: str  
     disciplina: List[str]
-    adm: bool
+    adm: bool = True
