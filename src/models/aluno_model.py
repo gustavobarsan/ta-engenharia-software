@@ -1,10 +1,9 @@
 from pydantic import BaseModel
-from typing import Optional
-from models import Curso
+from typing import Optional, List
 
 class Aluno(BaseModel):
-    id: Optional[str] = None
-    nome_aluno: str
-    mensagem: str
-    email_institucional_aluno: Optional[str] = ''
-    curso_aluno: Curso
+    nome: str
+    email: str
+    senha: str
+    disciplina: List[str]
+    adm: bool = False
