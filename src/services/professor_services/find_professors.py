@@ -7,7 +7,7 @@ def professor_parse(entity_professor) -> dict:
         "id": str(entity_professor['_id']),
         "nome": entity_professor['nome'],
         "email": entity_professor['email'],
-        "disciplina:": entity_professor['disciplina:'],
+        "disciplina:": entity_professor['disciplina'],
     } 
 
 def get_all_professors() -> list:
