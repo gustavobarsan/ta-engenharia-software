@@ -1,6 +1,6 @@
 from config.db import get_database
 from helpers.aluno_parse import aluno_parse
-from pymongo import ObjectId
+from bson.objectid import ObjectId
 
 conn_db = get_database()
 

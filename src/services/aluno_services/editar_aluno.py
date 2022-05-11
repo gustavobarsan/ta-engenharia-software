@@ -1,5 +1,5 @@
 from config.db import get_database
-from pymongo import ObjectId
+from bson.objectid import ObjectId
 from helpers.aluno_parse import editar_aluno_parse
 
 conn_db = get_database()

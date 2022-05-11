@@ -1,9 +1,11 @@
 from fastapi import FastAPI
 from config.db import get_database
 from routers.professor_router import professor
+from routers.aluno_router import api_aluno
 app = FastAPI()
 
 app.include_router(professor)
+app.include_router(api_aluno)
 
 @app.get("/")
 async def root():
