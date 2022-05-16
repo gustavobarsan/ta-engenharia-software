@@ -10,7 +10,7 @@ mensagem = APIRouter()
 conn_db = get_database()
 
 
-@mensagem.get('/disciplina/{id_disciplina}', status_code=200)
+@mensagem.get('/{id_disciplina}', status_code=200)
 def find_all_mensagens_by_id_disciplina(id_disciplina: str):
     mensagens = conn_db['mensagens'].find({'disciplina.id': id_disciplina})
 
