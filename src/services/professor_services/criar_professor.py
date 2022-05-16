@@ -3,6 +3,7 @@ from models.professor_model import Professor
 
 conn_db = get_database()
 
+
 def criar_professor(professor: Professor):
     new_professor = dict(professor)
     print(new_professor)

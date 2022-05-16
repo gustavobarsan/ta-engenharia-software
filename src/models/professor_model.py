@@ -7,3 +7,7 @@ class Professor(BaseModel):
     senha: str  
     disciplina: List[str]
     adm: bool = True
+
+class ProfessorInDisciplina(BaseModel):
+    id: str
+    nome: str

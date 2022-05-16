@@ -1,9 +1,15 @@
 from pydantic import BaseModel
-from typing import Optional
-from professor_model import Professor
+from typing import Optional, List
+from src.models.professor_model import Professor
+from src.models.aluno_model import AlunoInDisciplina
+from src.models.professor_model import ProfessorInDisciplina
 
-class Curso(BaseModel):
-    id: Optional[str] = None
-    nome_curso: str
-    descricao_curso: Optional[str] = None
-    professor_vinculado: Professor
+
+class Disciplina(BaseModel):
+    nome: str
+    alunos: List[AlunoInDisciplina]
+    professores: List[ProfessorInDisciplina]
+
+
+class DisciplinaInMensagem(BaseModel):
+    id: str

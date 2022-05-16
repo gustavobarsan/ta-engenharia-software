@@ -1,5 +1,6 @@
 from pydantic import BaseModel
-from typing import Optional, List
+from typing import List
+
 
 class Aluno(BaseModel):
     nome: str
@@ -7,3 +8,8 @@ class Aluno(BaseModel):
     senha: str
     disciplina: List[str]
     adm: bool = False
+
+
+class AlunoInDisciplina(BaseModel):
+    id: str
+    nome: str
