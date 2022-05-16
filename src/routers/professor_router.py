@@ -1,8 +1,8 @@
 from fastapi import APIRouter
-from src.models.professor_model import Professor
-from src.config.db import get_database
-from src.services.professor_services.find_professors import get_all_professors
-from src.services.professor_services.criar_professor import criar_professor
+from models.professor_model import Professor
+from config.db import get_database
+from services.professor_services.find_professors import get_all_professors
+from services.professor_services.criar_professor import criar_professor
 
 conn_db = get_database()
 professor = APIRouter()

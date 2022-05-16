@@ -1,5 +1,5 @@
-from src.schemas.autor import autor_entity_in_mensagem
-from src.schemas.disciplina import disciplina_entity_in_mensagem
+from schemas.autor import autor_entity_in_mensagem
+from schemas.disciplina import disciplina_entity_in_mensagem
 
 
 def mensagem_entity(entity: dict):

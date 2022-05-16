@@ -1,8 +1,8 @@
 from fastapi import APIRouter, HTTPException
 from src.config.db import get_database
 from bson import ObjectId
-from src.schemas.disciplina import disciplina_entity
-from src.models.disciplina_model import Disciplina
+from schemas.disciplina import disciplina_entity
+from models.disciplina_model import Disciplina
 
 disciplina = APIRouter()
 

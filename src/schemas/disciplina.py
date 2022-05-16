@@ -1,5 +1,5 @@
-from src.schemas.aluno import aluno_entity_in_disciplina
-from src.schemas.professor import professor_entity_in_disciplina
+from schemas.aluno import aluno_entity_in_disciplina
+from schemas.professor import professor_entity_in_disciplina
 
 
 def disciplina_entity(entity: dict):
