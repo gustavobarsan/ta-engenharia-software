@@ -1,8 +1,8 @@
 from pydantic import BaseModel
 from datetime import datetime
 
-from models.autor import AutorInMensagem
-from models.disciplina import DisciplinaInMensagem
+from models.autor_model import AutorInMensagem
+from models.disciplina_model import DisciplinaInMensagem
 
 
 class Mensagem(BaseModel):
