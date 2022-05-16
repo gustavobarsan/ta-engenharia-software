@@ -1,5 +1,5 @@
 from fastapi import APIRouter, HTTPException
-from src.config.db import get_database
+from config.db import get_database
 from bson import ObjectId
 from schemas.disciplina import disciplina_entity
 from models.disciplina_model import Disciplina
