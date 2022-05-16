@@ -2,7 +2,7 @@ from fastapi import APIRouter, HTTPException
 from config.db import get_database
 from bson import ObjectId
 
-from models.mensagem import Mensagem, UpdateMensagem
+from models.mensagem_model import Mensagem, UpdateMensagem
 from schemas.mensagem import mensagem_entity
 
 mensagem = APIRouter()
