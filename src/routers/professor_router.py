@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from models.professor_model import Professor
+from models.professor_model import Professor, ProfessorEditar
 from config.db import get_database
 from services.professor_services.find_professors import get_all_professors
 from services.professor_services.criar_professor import criar_professor
@@ -26,8 +26,8 @@ def find_professor():
     return "TAES-2022.1"
 
 @professor.patch('/professor/{id}')
-def edit_professor(id: str, professor :ProfessorEditar):
-    return editar_professor(id,professor)
+def edit_professor(id: str, professor: ProfessorEditar):
+    return editar_professor(id, professor)
 
 
 @professor.delete('/professor/{id}')
