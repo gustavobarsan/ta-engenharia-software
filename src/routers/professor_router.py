@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 from models.professor_model import Professor, ProfessorEditar
 from config.db import get_database
-from services.professor_services.find_professors import get_all_professors
+from services.professor_services.procurar_professors import get_all_professors
 from services.professor_services.criar_professor import criar_professor
 from services.professor_services.editar_professor import editar_professor
 from services.professor_services.deletar_professor import deletar_professor
